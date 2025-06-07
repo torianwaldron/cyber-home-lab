@@ -1,0 +1,15 @@
+# pfSense Firewall Rules Export
+LAN Interface Rules:
+------------------------------------
+Rule 1: Allow TCP from LAN net to any port 80
+Rule 2: Allow TCP from LAN net to any port 443
+Rule 3: Block all other outbound traffic
+
+WAN Interface Rules:
+------------------------------------
+Rule 1: Allow established/related inbound traffic
+Rule 2: Block all others
+
+NAT Settings:
+- Port Forward: WAN TCP 2222 → 192.168.1.10:22 (SSH)
+- Port Forward: WAN TCP 8080 → 192.168.1.20:80 (Web)
