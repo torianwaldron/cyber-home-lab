@@ -1,0 +1,16 @@
+# Nikto Vulnerability Scan – DVWA Apache Server
+
+**Target:** http://192.168.56.103  
+**Port:** 80  
+**Web Server:** Apache/2.4.18 (Ubuntu)
+
+**Findings:**
+- /admin/ - Admin login page found
+- /test/ - Test directory publicly accessible
+- /cgi-bin/ - Directory indexing enabled
+- Apache version is outdated and has known vulnerabilities (CVE-2017-15715)
+
+**Recommendations:**
+- Disable directory indexing
+- Update Apache to the latest stable version
+- Restrict access to sensitive directories
