@@ -1,0 +1,18 @@
+# Cybersecurity Risk Assessment – Home Lab Environment
+
+**Asset:** Ubuntu Server (192.168.56.103)  
+**Purpose:** Hosts vulnerable DVWA web app for testing
+
+**Threats Identified:**
+- Brute force login attempts (HTTP POST)
+- Local file inclusion via DVWA vulnerability
+- Outdated Apache web server with CVEs
+
+**Likelihood:** High  
+**Impact:** Moderate  
+**Risk Level:** High
+
+**Mitigation Actions:**
+- Isolate VM to NAT-only network
+- Apply web server access restrictions (htpasswd)
+- Enable packet logging via pfSense for HTTP requests
