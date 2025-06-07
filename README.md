@@ -34,15 +34,23 @@ A personal cybersecurity lab built to sharpen hands-on skills, simulate attacks,
 
 ### 🔹 Network Scanning
 - Used `nmap` to identify open ports on vulnerable hosts.
-- Full report: `/network-scans/nmap-report.txt`
+- Full report: [nmap-scan.txt](./network-scans/nmap-scan.txt)
 
 ### 🔹 Traffic Capture
 - Captured ping, DNS, and HTTP requests using `Wireshark`.
-- `.pcap` files and analysis notes located in `/traffic-analysis`.
+- Notes: [dns-capture-notes.txt](./traffic-analysis/dns-capture-notes.txt)
 
 ### 🔹 Exploitation Test
 - Simulated RCE on DVWA via `Metasploit`.
-- Documented setup steps, exploit chain, and mitigation in `/exploit-demos`.
+- Output: [msfconsole-output.txt](./exploit-demos/msfconsole-output.txt)
+
+### 🔹 Firewall Configuration
+- Sample rules and port forwarding setup.
+- Config: [pfsense-rules.txt](./firewall-config/pfsense-rules.txt)
+
+### 🔹 Documentation
+- Risk writeup for lab host.
+- Read: [risk-assessment-sample.txt](./documentation/risk-assessment-sample.txt)
 
 ---
 
