@@ -57,7 +57,7 @@ A personal cybersecurity lab built to sharpen hands-on skills, simulate attacks,
 
 ## 📬 Contact
 
-**Torian "Toro" Waldron**  
+**Torian Waldron**  
 🔗 [LinkedIn](https://www.linkedin.com/in/torian-waldron-2154a756/)  
 📧 torianwaldron783@gmail.com
 
