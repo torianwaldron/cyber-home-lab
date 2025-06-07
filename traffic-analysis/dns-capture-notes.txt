@@ -1,0 +1,26 @@
+# Wireshark Traffic Analysis – DNS Request Capture
+
+**Capture Tool:** Wireshark  
+**Interface:** vboxnet0 (VirtualBox NAT network)
+
+**Filter Used:**
+```
+udp.port == 53
+```
+
+**Activity Observed:**
+- User performed a DNS query for `securitytrails.com`
+- Request was sent to 8.8.8.8 (Google DNS)
+- Response returned IPv4 address 167.99.129.42
+
+**Timestamps:**
+- Request: 2025-06-06 14:12:03.567
+- Response: 2025-06-06 14:12:03.621
+
+**Analysis:**
+- No signs of DNS tunneling or anomalies
+- Query/response pattern consistent with standard resolver behavior
+- Source host: 192.168.56.101 (Kali Linux attacker box)
+
+**File Notes:**
+- Corresponding `.pcapng` capture file available upon request or in future uploads
