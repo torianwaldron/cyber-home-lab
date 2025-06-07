@@ -1,0 +1,28 @@
+# Wireshark Traffic Analysis – HTTP GET Request
+
+**Capture Tool:** Wireshark  
+**Filter Applied:** http.request
+
+**Activity Observed:**
+- User accessed `http://dvwa.local/login.php`
+- HTTP GET request to `/login.php` sent to internal Apache web server at 192.168.56.103
+- Server responded with HTTP/1.1 200 OK
+- TCP handshake completed (SYN → SYN/ACK → ACK)
+
+**Headers (Client Request):**
+GET /login.php HTTP/1.1  
+Host: dvwa.local  
+User-Agent: Mozilla/5.0  
+
+**Headers (Server Response):**
+HTTP/1.1 200 OK  
+Server: Apache/2.4.18 (Ubuntu)  
+Content-Type: text/html  
+
+**Security Note:**
+- No SSL/TLS encryption (plaintext login page)
+- Credentials and session tokens vulnerable to sniffing on open networks
+
+**Mitigation Recommendation:**
+- Enforce HTTPS via server-side config (mod_rewrite or HSTS)
+- Apply self-signed cert for internal testing or Let's Encrypt for production
